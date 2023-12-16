@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@800&family=Poppins:wght@200;300;500;800;900&family=Raleway:wght@500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Little Lemon</title>
+    <style>
+      body {
+        background: #00136b;
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-family: "Poppins", sans-serif;
+        font-family: "Raleway", sans-serif;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 78vh;
+      }
+
+      button {
+        background-color: lightseagreen;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-size: 3.6rem;
+        margin-left: 4px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin-left: 4px;
+      }
+
+      form {
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightseagreen;
+        padding: 20px;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 130px auto;
+        border-radius: 10px;
+      }
+
+      form input {
+        border: none;
+        padding: 4px;
+        margin-left: 6px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+
+      input[type="email"] {
+        margin-left: 41px;
+      }
+
+      input[type="submit"] {
+        background-color: #011984;
+        color: #fff;
+        font-weight: bold;
+        width: 100px;
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 10px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "_header.html"%}
+    <main>{% block content %} {% endblock %}</main>
+  </body>
+</html>
