@@ -1,0 +1,1 @@
+# A Basic Django Application.
